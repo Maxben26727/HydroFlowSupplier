@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "879289883890",
+    "firebase_url": "https://hydro-flow.firebaseio.com",
+    "project_id": "hydro-flow",
+    "storage_bucket": "hydro-flow.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:879289883890:android:42fedb0aaa371645ca846b",
+        "android_client_info": {
+          "package_name": "com.max.hydro_flow_supplier"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "879289883890-51i2g7uhl400toqg4folrfnvc17bq0mm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkUUESIy9n1ojR8Gh9ZcsAmyiX599GkFc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "879289883890-51i2g7uhl400toqg4folrfnvc17bq0mm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

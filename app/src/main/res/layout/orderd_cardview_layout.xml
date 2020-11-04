@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/order_cardview"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:outlineProvider="none"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cust_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/orderid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/atomic_age"
+                android:textColor="#0A1120"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/coda"
+                android:text="Address:"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cutive_mono"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:id="@+id/show_items"
+                android:fontFamily="@font/coda"
+                android:text="Ordered for:"
+                android:textSize="14sp"
+                android:textColor="#000"
+                android:drawableTint="@color/black"
+                android:drawableEnd="@drawable/ic_expand_more_black_24dp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="match_parent"
+                android:id="@+id/item_list"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Check"
+                android:background="@drawable/greengradientbg"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:elevation="4dp"
+                android:visibility="gone"
+                android:textStyle="bold"
+                android:id="@+id/check_btn"
+                android:layout_marginTop="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:id="@+id/btn_lay"
+                android:orientation="horizontal">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:text="View Invoice"
+                android:id="@+id/viewinvoice_btn"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:drawableTint="#424141"
+                android:drawableTop="@drawable/ic_print_black_24dp"
+                android:background="@drawable/one"
+                android:textColor="#424141"
+                android:textSize="13sp"
+                android:layout_weight="1"
+android:layout_margin="1dp"
+                />
+
+
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:text="PAYMENT"
+                android:id="@+id/payment_btn"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:layout_weight="1"
+android:drawableTint="#424141"
+               android:drawableTop="@drawable/ic_payment_black_24dp"
+                android:background="@drawable/two"
+                android:textColor="#424141"
+                android:textSize="13sp"
+                android:layout_margin="1dp"
+                />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/btn_lay2"
+                android:weightSum="2"
+                >
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:text="Hold"
+                    android:layout_weight="1"
+                    android:id="@+id/hold_btn"
+                    android:textStyle="bold"
+                    android:drawableTint="#424141"
+                    android:drawableTop="@drawable/ic_pause_circle_filled_black_24dp"
+                    android:visibility="gone"
+                    android:background="@drawable/three"
+                    android:textColor="#424141"
+                    android:textSize="13sp"
+                    android:layout_margin="1dp"
+                    />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:text="Return"
+                    android:layout_weight="1"
+                    android:id="@+id/return_btn"
+                    android:drawableTop="@drawable/ic_settings_backup_restore_black_24dp"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    android:drawableTint="#424141"
+                    android:background="@drawable/four"
+                    android:textColor="#424141"
+                    android:textSize="13sp"
+                    android:layout_margin="1dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+<ImageView
+    android:id="@+id/done"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:visibility="gone"
+    android:src="@drawable/done"
+    android:layout_gravity="right|center_vertical"
+
+    />
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

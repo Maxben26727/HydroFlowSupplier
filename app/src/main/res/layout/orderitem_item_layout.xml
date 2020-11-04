@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:background="@color/transparent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="1dp"
+        app:cardCornerRadius="15dp"
+       app:cardBackgroundColor="@color/white"
+        app:cardElevation="2dp"
+        android:layout_height="140dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="140dp"
+            android:id="@+id/cart_product_iv"
+            android:layout_height="140dp"
+            android:scaleType="fitXY"
+            android:layout_gravity="center_vertical"/>
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/cart_product_iv"
+            android:layout_width="match_parent"
+           android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cart_product_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="PRoduct NAme"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                 />
+
+            <TextView
+                android:id="@+id/cart_product_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/exo_bold"
+                android:text="RS.500"
+                android:textColor="#FD0202"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/cart_product_total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/exo_bold"
+                android:text="TOTAL AMOUNT:"
+                android:textColor="#0A7E02"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/qty"
+                android:layout_width="60dp"
+                android:text="qty"
+                android:textSize="20sp"
+               android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:background="#2D0C74E3"
+                android:layout_marginTop="5dp"
+                android:layout_height="30dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>

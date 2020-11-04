@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:layout_height="match_parent"
+    tools:context=".payment_confirm">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/back"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_height="wrap_content"
+        >
+        <ImageButton
+            android:layout_width="60dp"
+
+            android:layout_height="40dp"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/toolbar_bg"
+            android:id="@+id/back_btn"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Collect Cash"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            android:layout_margin="5dp"
+            />
+
+
+
+    </RelativeLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/details"
+    android:layout_marginTop="5dp"
+    android:layout_below="@id/back"
+    android:background="@drawable/btn_bg"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textSize="17sp"
+                android:id="@+id/order_id_value"
+                android:textColor="#000"
+                android:textStyle="bold"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textSize="15sp"
+
+                android:textColor="#000"
+                android:id="@+id/name_value"
+                android:textStyle="bold"/>
+
+
+    <TextView
+        android:id="@+id/amount_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/coda"
+
+
+        android:textSize="14sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/pre_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/coda"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tot_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/coda"
+        android:textColor="#01BD10"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/balance_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+
+        android:fontFamily="@font/coda"
+        android:textColor="#F4021F"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/rec_amnt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:background="@drawable/edtxtbg2"
+        android:focusableInTouchMode="true"
+        android:hint="Enter Received Amount"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textColorHint="#fff" />
+</LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Customer Signature"
+                android:layout_below="@id/details"
+                android:textColor="#fff"
+                android:id="@+id/cust_sign_title"/>
+        <com.github.gcacace.signaturepad.views.SignaturePad
+            android:id="@+id/signature_pad"
+            android:layout_width="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_bg"
+            android:layout_below="@id/cust_sign_title"
+            android:layout_height="match_parent"
+            app:penColor="@android:color/black"
+            app:clearOnDoubleClick="true"
+            />
+    <Button
+        android:layout_width="100dp"
+        android:id="@+id/clear"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="CLEAR"
+        android:textColor="@color/white"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/yellowgradientbg"
+        android:layout_centerHorizontal="true"/>
+            <Button
+                android:layout_width="100dp"
+                android:id="@+id/confirm_payment_id"
+                android:layout_height="45dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:text="CONFIRM"
+                android:textColor="@color/white"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/greengradientbg"
+                android:layout_centerHorizontal="true"/>
+
+
+
+
+
+
+</RelativeLayout>
